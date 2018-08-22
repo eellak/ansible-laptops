@@ -6,5 +6,6 @@
  # adding the repository for brackets    
 - name: add repository for brackets
   apt_repository:
-    repo: deb http://ppa.launchpad.net/webupd8team/brackets/ubuntu bionic main| deb-src http://ppa.launchpad.net/webupd8team/brackets/ubuntu bionic main
+    repo: 'ppa:webupd8team/brackets'
+    codename: trusty
           
