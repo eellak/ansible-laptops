@@ -1,0 +1,4 @@
+# update/upgrade the repositories 
+- name: update repositories
+  apt: update_cache=yes upgrade=yes
+  changed_when: False

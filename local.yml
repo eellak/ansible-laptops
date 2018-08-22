@@ -1,0 +1,13 @@
+- hosts: localhost
+  become: true
+  pre_tasks:
+    - include: tasks/adding_key.yml
+    - include : tasks/adding_repos.yml
+    - include: tasks/update.yml
+           
+
+    # install the packages
+  tasks:
+    - include: tasks/users.yml
+    - include: tasks/packages.yml
+    - include: tasks/cron.yml

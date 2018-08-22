@@ -1,0 +1,10 @@
+# adding the repository for chrome   
+- name: add repository for chrome
+  apt_repository: 
+    repo: deb http://dl.google.com/linux/chrome/deb/ stable main
+    filename: google
+ # adding the repository for brackets    
+- name: add repository for brackets
+  apt_repository:
+    repo: deb http://ppa.launchpad.net/webupd8team/brackets/ubuntu bionic main| deb-src http://ppa.launchpad.net/webupd8team/brackets/ubuntu bionic main
+          

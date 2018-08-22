@@ -1,0 +1,12 @@
+#install the packages using the "with_items" loop
+# official link from ansible doc : https://ansible-tips-and-tricks.readthedocs.io/en/latest/os-dependent-tasks/installing_packages/
+- name: install basic packages
+  action: >
+    {{ ansible_pkg_mgr }} name={{ item }} state=present 
+  with_items:
+    - cura
+    - python 
+    - fritzing
+    - thonny
+    - brackets	
+    - google-chrome-stable	

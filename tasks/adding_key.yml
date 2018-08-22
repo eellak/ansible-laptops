@@ -1,0 +1,5 @@
+# adding the key for google repository
+- name: add key
+  apt_key:  
+    url: https://dl-ssl.google.com/linux/linux_signing_key.pub 
+    state: present

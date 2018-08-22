@@ -1,0 +1,5 @@
+- name: install cron job (ansible-pull) -->daily!<---
+  cron:
+    user: "ansible"
+    special_time: daily
+    job: /usr/bin/ansible-pull  -U https://github.com/<github_user>/ansible.git > /dev/null -t update.yml
