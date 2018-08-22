@@ -4,5 +4,5 @@
     url: https://dl-ssl.google.com/linux/linux_signing_key.pub 
     state: present
   apt_key: 
-    keserver: https://keyserver.ubuntu.com
+    keyserver: https://keyserver.ubuntu.com
     id: EEA14886
