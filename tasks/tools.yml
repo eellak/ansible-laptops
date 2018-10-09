@@ -1,6 +1,8 @@
 #install the packages using the "with_items" loop
 # official link from ansible doc : https://ansible-tips-and-tricks.readthedocs.io/en/latest/os-dependent-tasks/installing_packages/
 - name: install angular-cli
-  git:
+  npm:
+    name: angular-cli
+    global: yes
+    version: '1.7.2'
   
-
