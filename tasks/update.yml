@@ -4,4 +4,4 @@
     update_cache: yes
     upgrade: yes
   changed_when: False
-  always_run: yes
+  # always_run: yes
