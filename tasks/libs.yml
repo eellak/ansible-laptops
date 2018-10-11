@@ -7,32 +7,42 @@
 
 - name: install angular-cli
   npm:
+    become: yes
+    become_user: "{{ item }}"
     name: '@angular/cli'
     global: yes
     version: '1.7.2'
-#   loop: "{{ user_list }}"
+  loop: "{{ user_list }}"
 
 - name: install copyfiles
   npm:
+    become: yes
+    become_user: "{{ item }}"
     name: copyfiles
     global: yes
-#   loop: "{{ user_list }}"
+  loop: "{{ user_list }}"
 
 - name: install imagemin-cli
   npm:
+    become: yes
+    become_user: "{{ item }}"
     name: imagemin-cli
     global: yes
-#   loop: "{{ user_list }}"
+  loop: "{{ user_list }}"
 
 - name: install p5-cli
   npm:
+    become: yes
+    become_user: "{{ item }}"
     name: p5-cli
     global: yes
-#   loop: "{{ user_list }}"
+  loop: "{{ user_list }}"
 
 - name: install p5-manager
   npm:
+    become: yes
+    become_user: "{{ item }}"
     name: p5-manager
     global: yes
-#   loop: "{{ user_list }}"
+  loop: "{{ user_list }}"
   
