@@ -1,9 +1,9 @@
-#install the packages using the "with_items" loop
+# install javascript packages using npm
 # official link from ansible doc : https://ansible-tips-and-tricks.readthedocs.io/en/latest/os-dependent-tasks/installing_packages/
-- name: install angular
-  npm:
-    name: angular
-    global: yes
+# - name: install angular
+#   npm:
+#     name: angular
+#     global: yes
 
 - name: install angular-cli
   npm:

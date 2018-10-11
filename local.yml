@@ -11,6 +11,17 @@
     - include: tasks/users.yml
     - include: tasks/packages.yml
     - include: tasks/tools.yml
+    - include: tasks/external_packages.yml
     - include: tasks/cron.yml
 
-  # syntomeyseis gia xed, vscode, terminal, chrome, ffox  
+  # syntomeyseis gia xed, vscode, terminal, chrome, ffox
+  # sftp_webadmins:ISU3f8IoJcch
+  # folders in the server of the old students?
+  # password change for ftp server?
+  # october18 folder in ftp server for this course folders 
+  #
+  # username, password, email
+  # groups for moodle.
+  # uninstall users from sudoers
+  # separate playbooks for packages and libraries
+  # sian proposes naming the pcs and promote more friendship and common origins etc....

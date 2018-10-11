@@ -1,0 +1,5 @@
+# install external packages. get them first and then install them in the system.
+
+- name: install vs code
+  apt:
+    deb: /media/ellak/JETFLASH/code_1.28.0-1538751525_amd64.deb
