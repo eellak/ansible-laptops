@@ -1,6 +1,6 @@
 ---
 
 user_list:
-	- ellak
-	- cnc_user_01
-	- cnc_user_02
+  - ellak 
+  - cnc_user_01
+  - cnc_user_02
