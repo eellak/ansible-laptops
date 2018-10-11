@@ -10,8 +10,8 @@
   tasks:
     - include: tasks/users.yml
     # - include: tasks/packages.yml
-    # - include: tasks/tools.yml
-    - include: tasks/external_packages.yml
+    - include: tasks/libs.yml
+    # - include: tasks/external_packages.yml
     - include: tasks/cron.yml
 
   # syntomeyseis gia xed, vscode, terminal, chrome, ffox

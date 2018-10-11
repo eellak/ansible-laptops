@@ -10,6 +10,7 @@
     name: '@angular/cli'
     global: yes
     version: '1.7.2'
+  loop: "{{ user_list }}"
 
 - name: install copyfiles
   npm:
