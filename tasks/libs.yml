@@ -6,8 +6,8 @@
 #     global: yes
 
 - name: install angular-cli
-  become: yes
-  become_user: "{{ item }}"
+#   become: yes
+#   become_user: "{{ item }}"
   npm:
     name: '@angular/cli'
     global: yes
@@ -15,32 +15,32 @@
   loop: "{{ user_list }}"
 
 - name: install copyfiles
-  become: yes
-  become_user: "{{ item }}"
+#   become: yes
+#   become_user: "{{ item }}"
   npm:
     name: copyfiles
     global: yes
   loop: "{{ user_list }}"
 
 - name: install imagemin-cli
-  become: yes
-  become_user: "{{ item }}"
+#   become: yes
+#   become_user: "{{ item }}"
   npm:
     name: imagemin-cli
     global: yes
   loop: "{{ user_list }}"
 
 - name: install p5-cli
-  become: yes
-  become_user: "{{ item }}"
+#   become: yes
+#   become_user: "{{ item }}"
   npm:
     name: p5-cli
     global: yes
   loop: "{{ user_list }}"
 
 - name: install p5-manager
-  become: yes
-  become_user: "{{ item }}"
+#   become: yes
+#   become_user: "{{ item }}"
   npm:
     name: p5-manager
     global: yes
