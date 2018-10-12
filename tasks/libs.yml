@@ -12,7 +12,7 @@
     name: '@angular/cli'
     global: yes
     version: '1.7.2'
-  loop: "{{ user_list }}"
+  # loop: "{{ user_list }}"
 
 - name: install copyfiles
 #   become: yes
@@ -20,7 +20,7 @@
   npm:
     name: copyfiles
     global: yes
-  loop: "{{ user_list }}"
+  # loop: "{{ user_list }}"
 
 - name: install imagemin-cli
 #   become: yes
@@ -28,7 +28,7 @@
   npm:
     name: imagemin-cli
     global: yes
-  loop: "{{ user_list }}"
+  # loop: "{{ user_list }}"
 
 - name: install p5-cli
 #   become: yes
@@ -36,7 +36,7 @@
   npm:
     name: p5-cli
     global: yes
-  loop: "{{ user_list }}"
+  # loop: "{{ user_list }}"
 
 - name: install p5-manager
 #   become: yes
@@ -44,5 +44,5 @@
   npm:
     name: p5-manager
     global: yes
-  loop: "{{ user_list }}"
+  # loop: "{{ user_list }}"
   
