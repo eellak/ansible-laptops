@@ -2,10 +2,10 @@
 - name: add repository for chrome
   apt_repository: 
     repo: deb http://dl.google.com/linux/chrome/deb/ stable main
-    filename: google
+    state: present
+    filename: google-chrome
  # adding the repository for brackets    
 - name: add repository for brackets
   apt_repository:
     repo: 'ppa:webupd8team/brackets'
     codename: trusty
-          
