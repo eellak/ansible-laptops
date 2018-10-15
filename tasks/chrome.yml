@@ -1,10 +1,10 @@
 # install external packages. get them first and then install them in the system.
 - apt_repository: 
-  repo: deb http://dl.google.com/linux/chrome/deb/ stable main
+  repo: 'deb http://dl.google.com/linux/chrome/deb/ stable main'
   state: present
-  filename: google-chrome
-- name: add repo and install google chrome
+  filename: 'google-chrome'
+- name: 'add repo and install google chrome'
   apt_key: 
-    url: https://dl-ssl.google.com/linux/linux_signing_key.pub
+    url: 'https://dl-ssl.google.com/linux/linux_signing_key.pub'
   apt:
-    pkg: google-chrome-stable
+    pkg: 'google-chrome-stable'
