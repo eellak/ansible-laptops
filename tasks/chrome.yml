@@ -3,7 +3,7 @@
   apt_repository: 
     repo: deb http://dl.google.com/linux/chrome/deb/ stable main
     state: present
-    filename: 'google-chrome'
+    filename: google-chrome
 
 - name: add chrome key
   apt_key: 
@@ -11,4 +11,4 @@
 
 - name: 'install google chrome'
   apt:
-    pkg: 'google-chrome-stable'
+    pkg: google-chrome-stable
