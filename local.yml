@@ -1,9 +1,9 @@
 - hosts: localhost
   become: true
   pre_tasks:
-    # - include: tasks/adding_key.yml
-    # - include : tasks/adding_repos.yml
-    # - include: tasks/update.yml
+    - include: tasks/adding_key.yml
+    - include : tasks/adding_repos.yml
+    - include: tasks/update.yml
            
 
     # install the packages
@@ -12,8 +12,8 @@
     - include: tasks/packages.yml
     - include: tasks/libs.yml
     - include: tasks/external_packages.yml
+    - include: tasks/chrome.yml
     - include: tasks/cron.yml
-    # - include: tasks/chrome.yml
 
   # syntomeyseis gia xed, vscode, terminal, chrome, ffox
   # sftp_webadmins:ISU3f8IoJcch
