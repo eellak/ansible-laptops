@@ -1,1 +1,3 @@
-# Ansible_Ellak
+# Διαχείριση Φορητών Υπολγιστών Openlabs
+
+ANSIBLE scripts για την διαχείριση των φορητών υπολογιστών των OpenLabs.
